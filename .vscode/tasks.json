@@ -1,0 +1,20 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Android APK",
+      "type": "shell",
+      "command": "./gradlew assembleDebug",
+      "windows": { "command": ".\\gradlew.bat assembleDebug" },
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Install on connected Android device",
+      "type": "shell",
+      "command": "./gradlew installDebug",
+      "windows": { "command": ".\\gradlew.bat installDebug" },
+      "problemMatcher": []
+    }
+  ]
+}
